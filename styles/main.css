@@ -1,0 +1,137 @@
+
+/* Zmienne kolorów i czcionek */
+:root {
+    --color-orange: #FF1515;
+    --color-hover-ogan: #ff5050;
+    --color-grey: #222;
+    --font-color-oran: #FF1515;
+    --font-color-whit: #f0f0f0; /* Jaśniejszy kolor czcionki dla lepszej widoczności */
+    --font-color-black: #000;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    --font-size-xlarge: 24px;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Ogólne style */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-grey);
+    color: var(--font-color-whit);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-orange);
+    color: var(--font-color-whit);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo a {
+    font-size: var(--font-size-large);
+    color: var(--font-color-whit);
+    text-decoration: none;
+
+}
+
+/* Przycisk do otwierania menu na małych ekranach */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Będzie widoczny tylko na telefonach */
+}
+
+/* Styl dla menu na większych ekranach (flex row) */
+nav.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu ul {
+    display: flex; /* Wyświetlamy elementy w jednym rzędzie */
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: var(--font-color-whit);
+    font-size: var(--font-size-medium);
+}
+
+/* Media queries dla małych ekranów */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Ukryj menu na małych ekranach */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: var(--color-orange);
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: inline-block; /* Widoczne tylko na telefonach */
+    }
+
+    .menu.show {
+        display: block; /* Pokazuj menu, gdy klasa 'show' jest dodana */
+    }
+}
+@media (min-width: 769px){
+.mobile_modal{
+    display: none;
+}
+}
+/*Style nagłówka */
+.logo{
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--font-color-whit);
+    font-weight: 700;
+}
+.nav-list{
+    font-size: 6px;
+    padding: 16px 78px;
+    border-inline: 1px solid var(--color-hover-ogan);
+}
+.nav-list:hover{
+    background-color:var(--color-hover-ogan) ;
+}
+
+/* Stylowanie stopki */
+footer {
+    background-color: var(--color-grey);
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: var(--font-color-whit);
+    margin: 0 10px;
+    text-decoration: none;
+}
+.login-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
