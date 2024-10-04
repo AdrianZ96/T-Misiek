@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="mobile_modal js-menu-container">
-        <button type="button" class="js-close-menu">X</button>
+        <!-- <button type="button" class="js-close-menu">X</button> -->
         <ul class="modal-menu">
-            <li><a href="index.html">Strona Główna</a></li>
-            <li><a href="events.html">Nadchodzące Wydarzenia</a></li>
-            <li><a href="workout.html">Plan Treningowy</a></li>
-            <li><a href="about.html">O Mnie</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="shop.html">Zakupy</a></li>
+            <li class="list"><a class="mob-list" href="index.html">Strona Główna</a></li>
+            <li class="list"><a class="mob-list" href="events.html">Nadchodzące Wydarzenia</a></li>
+            <li class="list"><a class="mob-list" href="workout.html">Plan Treningowy</a></li>
+            <li class="list"><a class="mob-list" href="about.html">O Mnie</a></li>
+            <li class="list"><a class="mob-list" href="contact.html">Kontakt</a></li>
+            <li class="list"><a class="mob-list" href="shop.html">Zakupy</a></li>
         </ul>
     </div>
     <header class="header">
@@ -61,10 +61,27 @@
 
     </main>
     <footer>
+
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+            <div class="contact">
+                <p>Kontakt</p>
+                <a href="">teammisiek@gmail.com</a>
+                <a href=""> 123 456 789</a>
+            </div>
+            <a href="#">
+                <svg class="yt-hov" width="30px" height="30px">
+                    <use href="./svg/menu.svg#icon-facebook" fill="white">
+                    </use>
+                </svg>
+            </a>
+            <a href="#"><svg width="30px" height="30px">
+                <use href="./svg/menu.svg#icon-twitter" fill="white">
+                </use>
+            </svg></a>
+            <a href="#"><svg width="30px" height="30px">
+                <use href="./svg/menu.svg#icon-youtube" fill="white">
+                </use>
+            </svg></a>
         </div>
     </footer>
 
