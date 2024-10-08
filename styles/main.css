@@ -17,6 +17,21 @@
     padding: 0;
     margin: 0;
 }
+@keyframes slide {
+    0% {
+        background-image: url('../photos/gym1.jpg');
+    }
+    33% {
+        background-image: url('../photos/gym2.jpg');
+    }
+    66% {
+        background-image: url('../photos/food1.jpg');
+    }
+    100% {
+        background-image: url('../photos/gym1.jpg');
+    }
+}
+
 /* Ogólne style */
 body {
     margin: 0;
@@ -34,8 +49,10 @@ header {
     background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(255,21,21,1) 89%);
     color: var(--font-color-whit);
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
+    padding: 25px;
+    z-index: 2;
 }
 
 .header .logo a {
@@ -58,6 +75,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(255
     display: flex;
     flex-direction: row;
     width: 100vw;
+    padding-top: 10px;
 }
 
 nav.menu ul {
@@ -180,7 +198,7 @@ nav.menu ul li a {
 .nav-list{
     font-size: 6px;
     padding: 16px 78px;
-    border-inline: 1px solid var(--color-hover-ogan);
+    /* border-inline: 1px solid var(--color-orange); */
 }
 .nav-list:hover{
     background-color:var(--color-orange) ;
@@ -221,3 +239,66 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
     align-items: center;
     text-align: center;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 800px; /*na próbe */
+}
+.title{
+    font-size: 60px;
+    padding: 20px;
+    text-align: center;
+    color: var(--color-orange);
+}
+.greeting{
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.greeting::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 100% 100%;
+    background-position: center center; /* centrowanie obrazu w poziomie i pionie */
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+ .text{
+    font-size: 16px;
+
+ }
+ .about{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+ }
+ .space{
+    padding-block: 48px;
+ }
+ .check{
+    padding: 15px 80px;
+    background-color: var(--color-orange);
+    border-radius: 7px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    border-color: var(--font-color-oran);
+ }
+ .check:hover,
+ .check:focus{
+    background-color: var(--color-hover-ogan);
+ }
