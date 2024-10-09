@@ -51,7 +51,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(255
     color: var(--font-color-whit);
     /* position: sticky;
     top: 0; */
-    padding: 25px;
+    padding: 25px 25px 0 25px;
     z-index: 2;
 }
 
@@ -74,7 +74,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(255
 .menu {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    /* width: 100vw; */
     padding-top: 10px;
 }
 
@@ -197,8 +197,7 @@ nav.menu ul li a {
 }
 .nav-list{
     font-size: 6px;
-    padding: 16px 78px;
-    /* border-inline: 1px solid var(--color-orange); */
+    padding: 10px 70px;
 }
 .nav-list:hover{
     background-color:var(--color-orange) ;
@@ -247,8 +246,8 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
     height: 800px; /*na próbe */
 }
 .title{
-    font-size: 60px;
-    padding: 20px;
+    font-size: 58px;
+    padding: 0 20px 60px;
     text-align: center;
     color: var(--color-orange);
 }
@@ -261,7 +260,6 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 .greeting::before {
     content: '';
@@ -276,6 +274,16 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
     background-repeat: no-repeat;
     animation: slide 20s infinite;
 }
+.greeting::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* zachowaj ten sam z-index co before */
+    background-color: rgba(0, 0, 0, 0.5); /* 0.5 to poziom przyciemnienia, możesz go zmienić */
+}
  .text{
     font-size: 16px;
 
@@ -283,7 +291,27 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
  .about{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 20px;
+ }
+ .info{
+    list-style: none;
+    color: var(--font-color-oran);
+    position: relative;
+ }
+ .info p{
+    position: absolute;
+    bottom: 0;
+    padding:20px 95px;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: background-color 1s ease;
+
+ }
+ .info p:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+ }
+ .about-photo{
+    width: 385px;
+    height: 250px;
  }
  .space{
     padding-block: 48px;
@@ -301,4 +329,9 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
  .check:hover,
  .check:focus{
     background-color: var(--color-hover-ogan);
+    border-color: var(--color-hover-ogan) ;
+ }
+ .box{
+    max-width: 1200px;
+    margin: auto;
  }
