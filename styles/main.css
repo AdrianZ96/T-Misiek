@@ -51,17 +51,9 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(255
     color: var(--font-color-whit);
     /* position: sticky;
     top: 0; */
-    padding: 25px 25px 0 25px;
+    padding: 0 25px 25px;
     z-index: 2;
 }
-
-.header .logo a {
-    font-size: var(--font-size-large);
-    color: var(--font-color-whit);
-    text-decoration: none;
-
-}
-
 /* Przycisk do otwierania menu na małych ekranach */
 .menu-toggle {
     background: none;
@@ -86,11 +78,11 @@ nav.menu ul {
     padding: 0;
 }
 
-nav.menu ul li a {
+/* nav.menu ul li a {
     text-decoration: none;
     color: var(--font-color-whit);
     font-size: var(--font-size-medium);
-}
+} */
 .icon-menu{
     position: absolute;
     right: 10px;
@@ -105,7 +97,8 @@ nav.menu ul li a {
         right: 0; /* Zaczyna z lewej strony */
         width: 50%;
         height: 60%;
-        background-color: var(--color-orange);
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,21,21,1) 100%);
         transform: translateY(-100%); /* Początkowo poza ekranem */
         transition: transform 0.8s ease;
         visibility: hidden; /* Ukryte przed pojawieniem się */
@@ -189,19 +182,29 @@ nav.menu ul li a {
 }
 }
 /*Style nagłówka */
-.logo{
-    font-size: 40px;
+.logo {
+    font-size: 60px;
+    font-weight: 900;
     text-decoration: none;
-    color: var(--font-color-whit);
-    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+    margin: 0;
 }
 .nav-list{
-    font-size: 6px;
-    padding: 10px 70px;
+    font-size: 16px;
 }
-.nav-list:hover{
-    background-color:var(--color-orange) ;
-    color: var(--color-grey);
+.nav-list a{
+    padding: 22px 70px;
+    text-decoration: none;
+    color: var(--color-orange);
+}
+.nav-list a:hover{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 10%, rgba(255,21,21,0.5) 49%); /* Gradient po najechaniu */
+    color: var(--font-color-black);
 }
 
 /* Stylowanie stopki */
@@ -212,26 +215,46 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
     padding: 20px;
     text-align: center;
 }
-.yt-hov:hover{
+.yt-hov use:hover{
     fill: #c4302c;
 }
 .social-media{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:center;
+    justify-content:space-around;
     gap: 20px;
 }
 .contact{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
 }
-
+.contacts-links{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--font-color-black);
+}
+.social-icons{
+    display: flex;
+    gap: 55px;
+}
 .social-media a {
     color: var(--font-color-whit);
     margin: 0 10px;
     text-decoration: none;
+}
+.footer-title{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+    margin: 0;
 }
 .login-container{
     display: flex;
@@ -246,7 +269,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
     height: 800px; /*na próbe */
 }
 .title{
-    font-size: 58px;
+    font-size: 60px;
     padding: 0 20px 60px;
     text-align: center;
     color: var(--color-orange);
@@ -334,4 +357,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
  .box{
     max-width: 1200px;
     margin: auto;
+ }
+ .title-bg{
+    padding-block: 14px;
  }
