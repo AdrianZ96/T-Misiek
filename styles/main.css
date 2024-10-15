@@ -195,7 +195,7 @@ nav.menu ul {
     margin: 0;
 }
 .nav-list{
-    font-size: 16px;
+    font-size: 14px;
 }
 .nav-list a{
     padding: 20px 70px;
@@ -233,7 +233,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(2
 .contacts-links{
     font-size: 25px;
     font-weight: 700;
-    color: var(--font-color-black);
+    color: var(--font-color-whit)
 }
 .social-icons{
     display: flex;
