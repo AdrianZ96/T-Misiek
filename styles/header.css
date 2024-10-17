@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* dla okien modalnych itp */
 .about-photo{
     width: 300px;
     height: 300px; /*  to tylko za chwilę*/
@@ -67,7 +68,7 @@
 
  }
  .check{
-    background-color: #ff7f50;
+    background-color: #ff7f507c;
     color: #fff;
     padding-block: 100px;
     border-top-right-radius: 200px;
@@ -96,7 +97,7 @@
  }
  .events{
     color: #fff;
-    background-color: #ff7f50;
+    background-color: #ff7f507c;
     padding-block: 100px;
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
