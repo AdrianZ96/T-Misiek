@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-photo{
+    width: 300px;
+    height: 300px; /*  to tylko za chwilę*/
+}
+.js-open-menu{
+    display: none;
+}
+.js-menu-container{
+    display: none;
+}
+
+.header{
+    background-color: #e8e8e8;
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+/* .title-bg{
+
+} */
+ .box{
+    background-image: url(../photos/gym2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .logo{
+    font-size: 60px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+    margin: 0;
+    margin-left: 2rem;
+ }
+ .menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    font-size: 20px;
+
+ }
+ .menu a{
+    text-decoration: none;
+    color: #555;
+ }
+ .nav-list{
+    list-style: none;
+    padding: 30px 40px;
+ }
+ .nav-list:hover,
+ .nav-list:focus{
+    background-color: #ff7f50;
+
+ }
+ .check{
+    background-color: #ff7f50;
+    color: #fff;
+    padding-block: 100px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    width: 65%;
+    transition: width 0.5s ease-in;
+ }
+ .check:hover{
+    width: 45%;
+ }
+ .title{
+    padding-left: 2rem;
+    font-size: 40px;
+ }
+ .news{
+    color: #fff;
+    background-color: rgba(83, 83, 184, 0.79);
+    padding-block: 100px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    width: 65%;
+    transition: width 0.5s ease-in;
+ }
+ .news:hover{
+    width: 45%;
+ }
+ .events{
+    color: #fff;
+    background-color: #ff7f50;
+    padding-block: 100px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    width: 65%;
+    transition: width 0.5s ease-in;
+ }
+.events:hover{
+    width: 45%;
+}
+.diet{
+    color: #fff;
+    background-color: rgba(83, 83, 184, 0.79);
+    padding-block: 100px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    width: 65%;
+    transition: width 0.5s ease-in;
+}
+.diet:hover{
+    width: 45%;
+}

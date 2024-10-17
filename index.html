@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Misiek!</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+     <link rel="stylesheet" href="./styles/header.css">
 </head>
 <body>
     <div class="mobile_modal js-menu-container">
@@ -28,32 +29,34 @@
             </svg>
         </button>
 
-        <nav class="menu box">
+        <nav class="menu">
             <ul>
-                <li class="nav-list"><a href="./index.html">Strona Główna</a></li>
-                <li class="nav-list"><a href="./events.html">Nadchodzące wydarzenia</a></li>
-                <li class="nav-list"><a href="./diet.html">Plan treningowy</a></li>
-                <li class="nav-list"><a href="./about.html">O mnie</a></li>
-                <li class="nav-list"><a href="./contact.html">Kontakt</a></li>
-                <!-- <li class="nav-list"><a href="login.html">Zaloguj się</a></li> -->
+                <li class="nav-list" onclick="window.location.href='./index.html'"><a href="./index.html">Strona Główna</a></li>
+                <li class="nav-list" onclick="window.location.href='./events.html'" ><a href="./events.html">Nadchodzące wydarzenia</a></li>
+                <li class="nav-list" onclick="window.location.href='./diet.html'"><a href="./diet.html">Plan treningowy</a></li>
+                <li class="nav-list" onclick="window.location.href='./about.html'"><a href="./about.html">O mnie</a></li>
+                <li class="nav-list" onclick="window.location.href='./contact.html'"><a href="./contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main class="box">
-        <section class="greeting space">
-            <h1 class="title">Dowiedz się co możesz z nami osiągnąć!</h1>
-           <button type="button" class="check">Sprawdź</button>
+        <section class="check space">
+            <h2 class="title">Dowiedz się co możesz z nami osiągnąć!</h2>
+           <!-- <button type="button" class="check">Sprawdź</button> -->
         </section>
         <div class="container">
         <section class="space">
-            <h2 class="title">Co u mnie znajdziesz?</h2>
-            <ul class="about">
-                <li class="info">
-                    <img class="about-photo" src="./photos/run1.jpg" alt="runners"><p>Najnowsze wydarzenia sportowe</p></li>
+            <h2 class="title news">Co u mnie znajdziesz?</h2>
+            <h2 class="title events">Najnowsze wydarzenia sportowe</h2>
+            <h2 class="title diet">Szczegółowe plany treningowe</h2>
+            <!--  <ul class="about">
+                <li class="info ">
+                   <img class="about-photo" src="./photos/run1.jpg" alt="runners">
+                    <p>Najnowsze wydarzenia sportowe</p></li>
                 <li class="info"><img class="about-photo" src="./photos/workout-list.jpg" alt="workout-list"><p>Szczegółowe plany treningowe</p></li>
                 <li class="info">
                     <img class="about-photo" src="./photos/diet2.jpg" alt="fit food"><p>Piekielnie smaczne przepisy</p></li>
-            </ul>
+            </ul> -->
         </section>
 
         <section class="space">
