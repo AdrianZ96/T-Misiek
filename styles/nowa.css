@@ -74,7 +74,7 @@ main{
 .choose_one{
     background-image: url(../photos/drazki1.jpg);
     position: relative;
-    width: 33%;
+    width: 33.33%;
     height: 850px;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ main{
 .choose_two{
     background-image: url(../photos/food-org.jpg);
     position: relative;
-    width: 33%;
+    width: 33.33%;
     height: 850px;
     background-position: center;
     background-size: cover;
@@ -130,7 +130,7 @@ main{
 .choose_three{
     background-image: url(../photos/silka.jpg);
     position: relative;
-    width: 33%;
+    width: 33.33%;
     height: 850px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,4 +179,36 @@ main{
     background-color: var(--color-main);
     border-radius: 35px;
     padding-inline: 15px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    background-color: #8c8383;
+    height: 450px;
+    padding: 85px;
+}
+.form-table{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact_about{
+    font-size: var(--font-size-xlarge);
+    text-align: center;
+    width: 50%;
+
+}
+.form_input{
+    padding: 5px 80px;
+    font-size: var(--font-size-medium);
+    color: #000;
+    border-radius: 10px;
+    border: none;
+}
+.label_names{
+    font-size: var(--font-size-large);
+    color: #000;
 }
