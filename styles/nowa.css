@@ -1,0 +1,168 @@
+/* Zmienne kolorów i czcionek */
+:root {
+    --color-orange: #e16c32;
+    --color-hover-ogan: #ff5050;
+    --color-main: #f8f9fa;
+    --font-color-oran: #b5703e;
+    --font-color-whit: #f0f0f0; /* Jaśniejszy kolor czcionki dla lepszej widoczności */
+    --font-color-black: #000;
+    --font-size-small: 16px;
+    --font-size-medium: 20px;
+    --font-size-large: 24px;
+    --font-size-xlarge: 60px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:var(--color-main) ;
+}
+.logo{
+    padding-left: 25px;
+}
+.navi{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 55px;
+    height: 80px;
+    border-bottom: 0.5px solid #d5d0d0;
+
+}
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 70px;
+}
+.nav_list-elem{
+    text-decoration: none;
+    color: #8c8383;
+    font-size: var(--font-size-medium);
+}
+.nav_list-elem:hover{
+    color: var(--color-orange);
+}
+.contact-first{
+    position: absolute;
+    fill: #8c8383;
+    z-index: 1;
+    right: 40px;
+}
+.contact-second{
+    position: absolute;
+    fill: #8c8383;
+    z-index: 1;
+    right: 100px;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+}
+
+.choose_one{
+    background-image: url(../photos/drazki1.jpg);
+    position: relative;
+    width: 33%;
+    height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose_one::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+}
+.choose_one:hover::after{
+    background-color: rgba(0, 0,0, 0);
+}
+.choose_two{
+    background-image: url(../photos/food-org.jpg);
+    position: relative;
+    width: 33%;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose_two::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+}
+.choose_two:hover::after{
+    background-color: rgba(0, 0,0, 0);
+}
+.choose_three{
+    background-image: url(../photos/silka.jpg);
+    position: relative;
+    width: 33%;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose_three::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+}
+.choose_three:hover::after{
+    background-color: rgba(0, 0,0, 0);
+}
+.check{
+    font-size: var(--font-size-medium);
+    padding: 10px 60px;
+    background-color: var(--color-orange);
+    border-radius: 15px;
+    border-color: var(--color-orange);
+    color: #000;
+    transition: background-color 0.5s;
+    position: relative;
+    z-index:5;
+}
+.check:hover{
+    background-color: rgba(0, 0,0, 0);
+    color: #fff;
+}
+.choose_text{
+    font-size: var(--font-size-xlarge);
+    font-weight: 700;
+    color: var(--color-orange);
+    text-align: center;
+}
