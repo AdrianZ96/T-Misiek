@@ -19,7 +19,10 @@
 body{
     background-color:var(--color-main) ;
 }
-.logo{
+.logo {
+    width: 60px;
+    height: auto;
+    max-width: 100%;
     padding-left: 25px;
 }
 .navi{
@@ -76,7 +79,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 25px;
 }
 .choose_one::after{
     content: '';
@@ -103,7 +107,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 25px;
 }
 .choose_two::after{
     content: '';
@@ -129,7 +134,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 25px;
 }
 .choose_three::after{
     content: '';
@@ -151,18 +157,23 @@ body{
     background-color: var(--color-orange);
     border-radius: 15px;
     border-color: var(--color-orange);
-    color: #000;
+    color: var(--color-main);
     transition: background-color 0.5s;
     position: relative;
     z-index:5;
+    margin-bottom: 25px;
 }
 .check:hover{
-    background-color: rgba(0, 0,0, 0);
-    color: #fff;
+    background-color: var(--color-main);
+    /* background-color: rgba(0, 0,0, 0); */
+    color: #000;
 }
 .choose_text{
     font-size: var(--font-size-xlarge);
     font-weight: 700;
     color: var(--color-orange);
     text-align: center;
+    background-color: var(--color-main);
+    border-radius: 15px;
+    padding-inline: 5px;
 }
