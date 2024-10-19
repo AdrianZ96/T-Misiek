@@ -19,6 +19,9 @@
 body{
     background-color:var(--color-main) ;
 }
+main{
+    width: 100vw;
+}
 .logo {
     width: 60px;
     height: auto;
@@ -174,6 +177,6 @@ body{
     color: var(--color-orange);
     text-align: center;
     background-color: var(--color-main);
-    border-radius: 15px;
-    padding-inline: 5px;
+    border-radius: 35px;
+    padding-inline: 15px;
 }
