@@ -16,9 +16,9 @@
         <nav class="nav_list"
         ><li><a href="" class="nav_list-elem">FAQ</a></li>
             <li><a href="" class="nav_list-elem">O mnie</a></li>
-            <li><a href="" class="nav_list-elem">Oferta</a></li>
+            <li><a href="#offer" class="nav_list-elem">Oferta</a></li>
             <li><a href="" class="nav_list-elem">Opinie</a></li>
-            <li><a href="" class="nav_list-elem">Kontakt</a></li></nav>
+            <li><a href="#contact" class="nav_list-elem">Kontakt</a></li></nav>
             <svg class="contact-first"width="20px" height="20px">
                 <use href="./svg/menu.svg#icon-mobile2"></use>
             </svg>
@@ -41,17 +41,34 @@
                 <button class="check" type="button">WIĘCEJ</button>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="box">
             <div class="contact_about">Jeśli jesteś zdecydowany i posiadasz jasne cele treningowe
             zapisz się do nas już dziś! Odwiedź mnie również na Social Mediach
             </div>
             <div class="social_media">
-                <svg width="50px" height="50px"><use href="./svg/tiktok-color-icon.svg#icon-tiktok" fill="white" ></use></svg>
-                <svg width="50px" height="50px"><use href="./svg/symbol-defs.svg#icon-facebook" fill="white" ></use></svg>
-                <svg width="50px" height="50px"><use href="./svg/symbol-defs.svg#icon-instagram" fill="white" ></use></svg>
-                <svg class="icon-space" width="60px" height="60px"><use class="yt-hover" href="./svg/symbol-defs.svg#icon-youtube" ></use></svg>
+                <a href="https://www.tiktok.com/@michal.matyjasik" target="_blank">
+                    <svg class="icon-space tt-hover" width="40px" height="40px">
+                        <use href="./svg/tiktok-color-icon.svg#icon-tiktok" fill="white"></use>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100002558880625" target="_blank">
+                    <svg class="icon-space fb-hover" width="40px" height="40px">
+                        <use href="./svg/symbol-defs.svg#icon-facebook" fill="white"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/matyjasikmichal/" target="_blank">
+                    <svg class="icon-space ig-hover" width="40px" height="40px">
+                        <use href="./svg/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@MiSiEkkkkk" target="_blank">
+                    <svg class="icon-space yt-hover" width="40px" height="40px">
+                        <use href="./svg/symbol-defs.svg#icon-youtube"></use>
+                    </svg>
+                </a>
             </div>
+
             </div>
             <form class="form-table">
                 <label class="label_names" for="name">Imię</label>
@@ -62,6 +79,57 @@
                 <textarea class="more_text" id="about"></textarea>
                 <button class="check" type="button">Wyślij</button>
             </form>
+        </section>
+        <section class="offer" id="offer">
+            <h2 class="offer-title">Co wspólnie osiągniemy?</h2>
+            <div class="offer-box">
+                <ul class="offer-list">
+                    <li class="offer-text offer-color"><p>Urozmaicona dieta dopasowana do twojego trybu życia!</p></li>
+                    <li class="offer-text"><p>Perfekcyjnie dopasowany plan treningowy zależy od czasu jakie planujesz poświęcić na jego realizacje!</p></li>
+                    <li class="offer-text"><p>Kontakt z profesjonalnym trenerem który doradzi Ci w ciężkich chwilach!</p></li>
+                    <li class="offer-text offer-color"><p>Zadowalające efekty treningowe i znakomite samopoczucie po osiągnięciu celu!</p></li>
+                </ul>
+                <video class="offer-video" width="860" height="1080" autoplay muted loop>
+                    <source src="./video/OfferVid.mp4" type="video/mp4">
+                    <source src="" type="video/ogg">
+                </video>
+            </div>
+        </section>
+        <section class="plan">
+            <h2 class="title-plan">Oferty treningowe</h2>
+            <div class="plan-box">
+            <div class="plans">
+                <h3 class="plan-title">Plan podstawowy</h3>
+            <ul>
+                <li class="plan-text">Jednodniowy jadłospis</li>
+                <li class="plan-text">Kontakt mailowy</li>
+                <li class="plan-text">Ćwiczenia na wybraną partie mięśniową</li>
+
+            </ul>
+        </div>
+        <div class="plans">
+            <h3
+            class="plan-title">Plan zaawansowany</h3>
+            <ul>
+                <li class="plan-text">Trzydniowy jadłospis</li>
+                <li class="plan-text">Kontakt mailowy</li>
+                <li class="plan-text">Ćwiczenia na dwie partie mięśniowe</li>
+                <li class="plan-text">Ćwiczenia pod okiem trenera raz w Tygodniu</li>
+
+            </ul>
+        </div>
+        <div class="plans">
+            <h3  class="plan-title">Plan dla prawdziwych niedźwiedzi</h3>
+            <ul>
+                <li class="plan-text">Siedmiodniowy jadłospis</li>
+                <li class="plan-text">Kontakt mailowy</li>
+                <li class="plan-text">Ćwiczenia na wszytkie partie mięśniowe</li>
+                <li class="plan-text">Ćwiczenia pod okiem trenera 2 razy w tygodniu</li>
+                <li class="plan-text">Badania składu masy ciała</li>
+                <li class="plan-text">Kompleksowa analiza budowy ciała i konsultacje ze mną</li>
+            </ul>
+        </div>
+    </div>
         </section>
     </main>
 
