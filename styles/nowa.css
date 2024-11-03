@@ -9,7 +9,7 @@
     --font-size-small: 16px;
     --font-size-medium: 20px;
     --font-size-large: 24px;
-    --font-size-xlarge: 60px;
+    --font-size-xlarge: 50px;
 
 }
 *{
@@ -309,7 +309,7 @@ main{
 .offer-text{
     display: flex;
     height: 300px;
-    width: 47.9%;
+    width: 47%;
     list-style: none;
     padding: 10px;
     text-align: center;
@@ -346,16 +346,22 @@ main{
     color: var(--color-main);
 }
 .plans{
-    background-color: var(--color-orange);
+    background-color:#dad2d2;
     width: 350px;
     height: 600px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 29px 1px rgba(255, 255, 255, 1);
     -moz-box-shadow: 0px 0px 29px 1px rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 29px 1px rgba(255, 255, 255, 1);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .plan-title{
-    color: var(--color-main);
+    color: var(--color-orange);
     font-size: 30px;
     display: block;
     text-align: center;
@@ -368,7 +374,7 @@ main{
 }
 .plan-text{
     list-style: none;
-    color: var(--color-main);
+    color: var(--font-color-black);
     font-size: 25px;
     padding: 15px 20px;
 }
