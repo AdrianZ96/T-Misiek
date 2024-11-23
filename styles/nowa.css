@@ -165,7 +165,7 @@ main{
     color: var(--color-main);
     transition: background-color 0.5s;
     position: relative;
-    z-index:5;
+    z-index: 2;
     margin-bottom: 25px;
     cursor: pointer;
 }
@@ -377,4 +377,105 @@ main{
     color: var(--font-color-black);
     font-size: 25px;
     padding: 15px 20px;
+}
+/* Modal */
+/* Styl dla modala */
+.modal {
+    display: none; /* Domyślnie ukryty */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Przyciemnione tło */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex; /* Wyświetl modal */
+}
+
+.modal__content {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px; /* Szerokość modala */
+    max-height: 85%; /* Maksymalna wysokość */
+    overflow-y: auto; /* Wewnętrzne przewijanie */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: relative; /* Pozycjonowanie elementów wewnątrz */
+}
+
+/* Usunięcie scrollbarów */
+.modal__content::-webkit-scrollbar {
+    display: none;
+}
+
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    color: red; /* Podświetlenie na czerwono przy najechaniu */
+}
+
+/* Styl formularza */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form__textarea {
+    resize: none;
+    height: 80px; /* Domyślna wysokość */
+}
+
+.form__button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form__button:hover {
+    background-color: #45a049;
+}
+
+/* Zablokowanie przewijania tła */
+body.modal-open {
+    overflow: hidden;
 }

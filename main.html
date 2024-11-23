@@ -99,14 +99,14 @@
             <h2 class="title-plan">Oferty treningowe</h2>
             <div class="plan-box">
             <div class="plans">
-                <h3 class="plan-title">Plan podstawowy</h3>
+                <h3 class="plan-title">Plan Żywieniowy</h3>
             <ul>
                 <li class="plan-text">Jednodniowy jadłospis</li>
                 <li class="plan-text">Kontakt mailowy</li>
                 <li class="plan-text">Ćwiczenia na wybraną partie mięśniową</li>
 
             </ul>
-            <button class="check">Kupuję</button>
+            <button class="check modal__open">Kupuję</button>
         </div>
         <div class="plans">
             <h3
@@ -135,6 +135,85 @@
     </div>
         </section>
     </main>
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">PLAN ŻYWIENIOWY – ANKIETA</h2>
+            <form class="form">
+                <label class="form__label" for="name">1. Imię i nazwisko:</label>
+                <input class="form__input" type="text" id="name" name="name" required>
 
+                <label class="form__label" for="age">2. Wiek:</label>
+                <input class="form__input" type="number" id="age" name="age" required>
+
+                <label class="form__label" for="weight">3. Waga:</label>
+                <input class="form__input" type="number" id="weight" name="weight" required>
+
+                <label class="form__label" for="height">4. Wzrost:</label>
+                <input class="form__input" type="number" id="height" name="height" required>
+
+                <label class="form__label" for="status">5. Jesteś uczniem/osobą pracującą/jedno i drugie?</label>
+                <textarea class="form__textarea" id="status" name="status" required></textarea>
+
+                <label class="form__label" for="goal">6. Jaki jest Twój cel? (redukcja/utrzymanie wagi/nabranie masy mięśniowej/poprawa zdrowia)</label>
+                <textarea class="form__textarea" id="goal" name="goal" required></textarea>
+
+                <label class="form__label" for="deadline">7. Czy masz konkretny termin do uzyskania swojego celu?</label>
+                <textarea class="form__textarea" id="deadline" name="deadline"></textarea>
+
+                <label class="form__label" for="training">8. Jeśli trenujesz, to jak często i jaki rodzaj treningu uprawiasz? (siłowy/cardio/mieszany)</label>
+                <textarea class="form__textarea" id="training" name="training"></textarea>
+
+                <label class="form__label" for="work">9. Jaką pracę wykonujesz? (siedząca/fizyczna)</label>
+                <textarea class="form__textarea" id="work" name="work"></textarea>
+
+                <label class="form__label" for="calories">10. Czy wiesz, ile aktualnie spożywasz kcal/makroskładników i czy jesteś aktualnie na zerze kalorycznym?</label>
+                <textarea class="form__textarea" id="calories" name="calories"></textarea>
+
+                <label class="form__label" for="allergies">11. Czy masz jakieś alergie pokarmowe lub nietolerancje? (gluten, laktoza)</label>
+                <textarea class="form__textarea" id="allergies" name="allergies"></textarea>
+
+                <label class="form__label" for="unwanted-products">12. Czy masz jakieś produkty spożywcze, których nie lubisz i nie chcesz ich mieć w swoich posiłkach? Jeśli tak, to wymień dokładnie, jakie to są produkty:</label>
+                <textarea class="form__textarea" id="unwanted-products" name="unwanted-products"></textarea>
+
+                <label class="form__label" for="diet-type">13. Czy stosujesz jakąś konkretną dietę? (wegetariańską, ketogeniczną)</label>
+                <textarea class="form__textarea" id="diet-type" name="diet-type"></textarea>
+
+                <label class="form__label" for="necessary-products">14. Czy są jakieś produkty, które koniecznie chcesz, aby znalazły się w Twojej diecie? Jeśli tak, to wymień dokładnie, jakie to są produkty:</label>
+                <textarea class="form__textarea" id="necessary-products" name="necessary-products"></textarea>
+
+                <label class="form__label" for="preferred-meals">15. Czy są jakieś konkretne rodzaje posiłków, które chcesz mieć w diecie? (np. owsianki, shaki itp.)</label>
+                <textarea class="form__textarea" id="preferred-meals" name="preferred-meals"></textarea>
+
+                <label class="form__label" for="meal-count">16. Ile posiłków chcesz jeść w ciągu dnia?</label>
+                <input class="form__input" type="number" id="meal-count" name="meal-count" required>
+
+                <label class="form__label" for="repeating-meals">17. Czy jakieś konkretne posiłki mogą się powtarzać, czy każdy dzień ma być zupełnie inny?</label>
+                <textarea class="form__textarea" id="repeating-meals" name="repeating-meals"></textarea>
+
+                <label class="form__label" for="eating-location">18. Czy masz możliwość jedzenia w domu, czy bardziej interesuje Cię „dieta pudełkowa” (jesz na mieście/w trasie/w szkole/w pracy)?</label>
+                <textarea class="form__textarea" id="eating-location" name="eating-location"></textarea>
+
+                <label class="form__label" for="time-limitations">19. Czy masz ograniczenia czasowe dotyczące przygotowywania posiłków?</label>
+                <textarea class="form__textarea" id="time-limitations" name="time-limitations"></textarea>
+
+                <label class="form__label" for="health-problems">20. Czy masz jakieś problemy zdrowotne? (cukrzyca/problemy trawienne)</label>
+                <textarea class="form__textarea" id="health-problems" name="health-problems"></textarea>
+
+                <label class="form__label" for="past-diet">21. Czy masz doświadczenie bycia na diecie i jakie były tego rezultaty?</label>
+                <textarea class="form__textarea" id="past-diet" name="past-diet"></textarea>
+
+                <label class="form__label" for="portion-problems">22. Czy masz problemy z podjadaniem/kontrolą porcji?</label>
+                <textarea class="form__textarea" id="portion-problems" name="portion-problems"></textarea>
+
+                <label class="form__label" for="hydration">23. Czy kontrolujesz ilość płynów spożywanych w ciągu dnia?</label>
+                <textarea class="form__textarea" id="hydration" name="hydration"></textarea>
+
+                <button class="form__button" type="submit">Wyślij</button>
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
