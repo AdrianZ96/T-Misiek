@@ -25,3 +25,31 @@ window.addEventListener('click', (e) => {
         closeModal();
     }
 });
+document.querySelector('.form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    try {
+        const response = await fetch('http://localhost:3000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+            alert('Formularz został wysłany!');
+        } else {
+            alert('Wystąpił błąd podczas wysyłania formularza.');
+        }
+    } catch (error) {
+        console.error('Błąd:', error);
+        alert('Nie udało się połączyć z serwerem.');
+    }
+});
